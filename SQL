@@ -1,4 +1,4 @@
-# **Arquivo SQL**
+# *Arquivo SQL*
 
 CREATE DATABASE sistema_arvores
 CHARACTER SET utf8mb4
