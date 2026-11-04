@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# EcoAlerta
+## EcoAlerta
 
 Sistema web para registrar e acompanhar ocorrências relacionadas à arborização urbana
 
@@ -59,5 +58,4 @@ ocorrências ambientais, informe sua localização e acompanhe o andamento das s
 4. Miguel Ferraz Barreto - Designer UI/UX e Acessibilidade
 5. Kauã Miranda de Souza - Desenvolvedor e Piloto da Demo
 6. Guilherme Ferreira da Silva - Desenvolvedor (Dashboard e Dados)
-
-    
+7. 
