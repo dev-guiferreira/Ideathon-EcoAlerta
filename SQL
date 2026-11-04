@@ -1,0 +1,21 @@
+# *Arquivo SQL*
+
+CREATE DATABASE sistema_arvores
+CHARACTER SET utf8mb4
+COLLATE utf8mb4_unicode_ci;
+
+USE sistema_arvores;
+
+CREATE TABLE ocorrencias_arvores (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    foto VARCHAR(255) NOT NULL,
+    latitude DECIMAL(10,8) NOT NULL,
+    longitude DECIMAL(11,8) NOT NULL,
+    precisao_gps FLOAT NULL,
+    tipo_problema VARCHAR(100) NOT NULL,
+    descricao TEXT,
+    status VARCHAR(30) DEFAULT 'pendente',
+    data_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+

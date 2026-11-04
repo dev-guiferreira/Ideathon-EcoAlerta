@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # EcoAlerta
 
 Sistema web para registrar e acompanhar ocorrências relacionadas à arborização urbana
@@ -58,3 +59,16 @@ ocorrências ambientais, informe sua localização e acompanhe o andamento das s
 4. Miguel Ferraz Barreto - Designer UI/UX e Acessibilidade
 5. Kauã Miranda de Souza - Desenvolvedor e Piloto da Demo
 6. Guilherme Ferreira da Silva - Desenvolvedor (Dashboard e Dados)
+=======
+# Projeto-Ideathon---FATEC-2026
+
+Integrantes:
+Lucas C. - 4° Semestre
+Kauã M. - 4° Semestre
+Mateus T.  - 4° Semestre
+Miguel F. - 3° Semestre
+Henrique S. - 4° Semestre
+Guilherme F. - 4° Semestre
+
+1° COMMIT APENAS PARA O PROJETO FICAR SALVO COMO BACKUP
+>>>>>>> c0a90dc2b8f029e41f604ed63484773a970ca261
