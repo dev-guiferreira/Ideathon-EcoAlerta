@@ -3,8 +3,10 @@
 Sistema web para registrar e acompanhar ocorrências relacionadas à arborização urbana
 
 ## Problema
-- A falta de um canal simples, acessível e organizado para que a população registre 
-ocorrências ambientais, informe sua localização e acompanhe o andamento das solicitações
+- Calçadas obstruídas: raízes que danificam o pavimento e galhos caídos que bloqueiam a passagem de pedestres.
+- Galhos baixos nas vias: galhos que atingem veículos de carga e oferecem riscos aos motoristas.
+- Perigo na fiação: árvores em contato com a rede elétrica, causando riscos de curtos-circuitos e acidentes.
+- Canais ineficientes: ouvidorias tradicionais que dificultam o envio de fotografias, a localização dos problemas e o acompanhamento das solicitações.
 
 ## Solução
 - Registro de ocorrências: permite que cidadãos denunciem problemas ambientais
