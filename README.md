@@ -32,6 +32,7 @@ Sistema web para registrar e acompanhar ocorrências relacionadas à arborizaç�
 - Realizar testes e corrigir possíveis erros.
 - Publicar o sistema para acesso público.
 - Futuramente, integrar o EcoAlerta aos órgãos responsáveis pela arborização urbana.
+- adicionar cadastro para administradores e usuários.
 
 ## Funcionalidades
 - Cadastro de ocorrência com fotografia, descrição e localização no mapa
