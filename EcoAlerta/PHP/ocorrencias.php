@@ -1,4 +1,3 @@
-
 <?php
 require_once "conexao.php";
 
@@ -87,9 +86,7 @@ function fotoUrl($foto)
                                 </span>
                             </div>
 
-                            <p>
-                                <?= e($item["descricao"] ?: "Sem descrição informada.") ?>
-                            </p>
+                            <p> <?= e($item["descricao"] ?: "Sem descrição informada.") ?> </p>
 
                             <small>
                                 Registro #<?= (int) $item["id"] ?>
