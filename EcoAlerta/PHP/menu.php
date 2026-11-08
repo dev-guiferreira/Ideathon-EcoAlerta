@@ -1,5 +1,9 @@
+<!--MENU - MENU PARA PAGINACAO -->
 <header class="site-header">
-    <a class="brand" href="painel.php">EcoAlerta</a>
+    <a class="brand" href="painel.php" aria-label="EcoAlerta - Painel geral">
+        <img src="../../logo/LOGOFINAL.png" alt="Logo EcoAlerta">
+        <span>EcoAlerta</span>
+    </a>
     <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-nav">
         <span></span><span></span><span></span>
     </button>

@@ -1,3 +1,4 @@
+<!-- Página de cadastro de novas ocorrências. -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>

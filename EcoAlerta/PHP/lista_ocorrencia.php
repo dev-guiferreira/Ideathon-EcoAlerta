@@ -5,6 +5,7 @@ header("Content-Type: application/json; charset=utf-8");
 
 require_once "conexao.php";
 
+/* Consulta e retorna as ocorrências em JSON. */
 try {
 
     $sql = "SELECT

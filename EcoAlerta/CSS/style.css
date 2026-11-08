@@ -1,5 +1,5 @@
 
-/*VARIÁVEIS DE CORES*/
+/* Define cores e medidas reutilizadas no site. */
 
 * {
     box-sizing: border-box;
@@ -58,7 +58,7 @@ img {
     max-width: 100%;
 }
 
-/*MENU*/
+/* Organiza o cabeçalho e a navegação. */
 
 .site-header {
     position: sticky;
@@ -77,11 +77,21 @@ img {
 }
 
 .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     color: var(--verde-escuro);
     font-size: 21px;
     font-weight: 750;
     letter-spacing: -0.5px;
     margin-right: auto;
+}
+
+/* tamanho da logo */
+.brand img {
+    width: 46px;
+    height: 46px;
+    object-fit: contain;
 }
 
 .menu-toggle {
@@ -152,7 +162,7 @@ img {
     color: var(--verde-escuro);
 }
 
-/*CONTEÚDO */
+/* área principal das páginas*/
 
 .main {
     width: min(100% - 32px, 1000px);
@@ -180,7 +190,7 @@ img {
     box-shadow: var(--sombra);
 }
 
-/*FORMULÁRIOS*/
+/* campos e formulários. */
 
 .field {
     display: grid;
@@ -451,7 +461,7 @@ img {
     text-align: center;
 }
 
-/*PAINEL E INDICADORES */
+/* Organiza os cartões de indicadores. */
 
 .stats-grid {
     display: grid;
@@ -509,7 +519,7 @@ img {
     margin-top: 18px;
 }
 
-/*TABELAS*/
+/* tabelas de dados. */
 
 .table-wrap {
     overflow-x: auto;
@@ -704,19 +714,6 @@ button:focus-visible {
     outline-offset: 3px;
 }
 
-/* RESPONSA P CELULAR */
-
-@media (max-width: 800px) {
-
-    .stats-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .map-layout {
-        grid-template-columns: 1fr;
-    }
-
-}
 
 @media (max-width: 650px) {
 
@@ -726,6 +723,11 @@ button:focus-visible {
 
     .brand {
         font-size: 19px;
+    }
+
+    .brand img {
+        width: 40px;
+        height: 40px;
     }
 
     .main {

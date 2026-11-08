@@ -1,4 +1,4 @@
-// Coordenadas API
+// coordenadas API
 const mapa = L.map("mapa").setView([-21.2201, -50.8698], 12);
 
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -9,18 +9,21 @@ const lista = document.getElementById("lista");
 const contador = document.getElementById("contador");
 const limites = [];
 
+// evita que textos recebidos sejam interpretados como HTML.
 function escaparHTML(valor) {
     return String(valor ?? "").replace(/[&<>"']/g, caractere => ({
         "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;"
     })[caractere]);
 }
 
+// formatta data para exibição.
 function dataFormatada(valor) {
     if (!valor) return "Data não informada";
     const data = new Date(valor.replace(" ", "T"));
     return Number.isNaN(data.getTime()) ? "Data não informada" : data.toLocaleDateString("pt-BR");
 }
 
+// busca ocorrências e adiciona os pontos ao mapa.
 async function carregarOcorrencias() {
     try {
         const resposta = await fetch("lista_ocorrencia.php");

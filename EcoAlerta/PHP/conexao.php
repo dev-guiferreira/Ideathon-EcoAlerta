@@ -1,11 +1,13 @@
 
 <?php
 
+/* dados de acesso ao banco. */
 $host = "localhost";
 $banco = "sistema_arvores";
 $usuario = "root";
 $senha = "";
 
+/* abre a conexão com o banco de dados. */
 try {
     $pdo = new PDO(
         "mysql:host=$host;dbname=$banco;charset=utf8mb4",
