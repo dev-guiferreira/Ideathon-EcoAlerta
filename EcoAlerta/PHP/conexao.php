@@ -1,4 +1,3 @@
-
 <?php
 
 /* dados de acesso ao banco. */
