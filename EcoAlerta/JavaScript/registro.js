@@ -1,4 +1,4 @@
-//API OpenStreetmap
+//Leaflet 
 const mapaRegistro = L.map("mapa-form").setView([-21.22, -50.87], 13);
 
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -16,7 +16,7 @@ const campoLatitude = document.getElementById("latitude");
 const campoLongitude = document.getElementById("longitude");
 const campoPrecisao = document.getElementById("precisao_gps");
 
-// Atualiza o mapa e os campos com a localização escolhida.
+// Atualiza o mapa e os campos com a localização escolhida
 function definirLocalizacao(latitude, longitude, precisao = null) {
     campoLatitude.value = latitude;
     campoLongitude.value = longitude;
@@ -51,7 +51,7 @@ function definirLocalizacao(latitude, longitude, precisao = null) {
     }
 }
 
-// solicita a localização atual do dispositivo.
+// solicita a localização atual do dispositivo
 botaoGps.addEventListener("click", () => {
     if (!("geolocation" in navigator)) {
         statusLocalizacao.textContent = "Este navegador não oferece suporte à localização. Marque o ponto diretamente no mapa.";
@@ -99,7 +99,7 @@ botaoGps.addEventListener("click", () => {
     );
 });
 
-// permite selecionar a localização diretamente no mapa.
+// permite selecionar a localização diretamente no mapa
 mapaRegistro.on("click", evento => {
     definirLocalizacao(evento.latlng.lat, evento.latlng.lng);
 });
@@ -131,7 +131,7 @@ document.getElementById("foto").addEventListener("change", evento => {
     preview.style.display = "block";
 });
 
-// converte a resposta do servidor para JSON.
+// converte a resposta do servidor para JSON
 async function lerRespostaJson(resposta) {
     const texto = await resposta.text();
 
@@ -142,7 +142,7 @@ async function lerRespostaJson(resposta) {
     }
 }
 
-// envia os dados do formulário para o PHP.
+// envia os dados do formulário para o PHP
 formulario.addEventListener("submit", async evento => {
     evento.preventDefault();
 
@@ -191,7 +191,7 @@ formulario.addEventListener("submit", async evento => {
     }
 });
 
-// limpa os dados e a prévia ao reiniciar o formulário.
+// limpa os dados e a prévia ao reiniciar o formulário
 formulario.addEventListener("reset", () => {
     setTimeout(() => {
         const preview = document.getElementById("preview");
