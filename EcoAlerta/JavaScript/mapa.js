@@ -9,21 +9,21 @@ const lista = document.getElementById("lista");
 const contador = document.getElementById("contador");
 const limites = [];
 
-// evita que textos recebidos sejam interpretados como HTML.
+// evita que textos recebidos sejam interpretados como HTML
 function escaparHTML(valor) {
     return String(valor ?? "").replace(/[&<>"']/g, caractere => ({
         "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;"
     })[caractere]);
 }
 
-// formatta data para exibição.
+// formatta data para exibição
 function dataFormatada(valor) {
     if (!valor) return "Data não informada";
     const data = new Date(valor.replace(" ", "T"));
     return Number.isNaN(data.getTime()) ? "Data não informada" : data.toLocaleDateString("pt-BR");
 }
 
-// busca ocorrências e adiciona os pontos ao mapa.
+// API que busca ocorrências e adiciona os pontos ao mapa (OpenStretmap)
 async function carregarOcorrencias() {
     try {
         const resposta = await fetch("lista_ocorrencia.php");
